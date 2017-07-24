@@ -1,0 +1,80 @@
+.login {
+    height: 100%;
+    width: 100%;
+    background-color: #0b0f27;
+    text-align: center;
+    background-image: url('../assets/background.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    
+    .logo, .input1, .input2, .log-in {
+            position: absolute;
+            -ms-transform: translate(-50%, -50%); 
+            -webkit-transform: translate(-50%, -50%); 
+            transform: translate(-50%, -50%);
+    }
+    .logo {
+            top: 35%;
+            left: 50%;
+    }
+    input {
+            width: 360px;
+            height: 56px;
+            border-radius: 5px;
+            left: 50%;
+            
+    }
+    /* Sets input-placeholder colour for various browsers */
+    ::-webkit-input-placeholder { 
+    color: #b2b2b2;
+    }
+    :-moz-placeholder { 
+        color: #b2b2b2;
+        opacity:  1;
+    }
+    ::-moz-placeholder { 
+        color: #b2b2b2;
+        opacity:  1;
+    }
+    :-ms-input-placeholder { 
+        color: #b2b2b2;
+    }
+    ::-ms-input-placeholder { 
+        color: #b2b2b2;
+    }
+    button {
+        padding-top: 200px;
+    }
+    input:focus {
+            color: #999;
+    }
+    
+    .input1 {
+            top: 55%;
+            
+    }
+    .input2 {
+            top: 65%;
+    }
+    
+    .log-in {
+            top: 75%;
+            left: 50%;
+            width: 360px;
+            padding: 16px 0px 16px 0px;
+            background-color: #9fd533;
+            font-weight: bold;
+            font-size: 16px;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all ease-in-out .1s;
+        }
+    .log-in:hover {
+        background-color: #86b300;
+    }
+}
