@@ -1,3 +1,4 @@
+
 .login {
     height: 100%;
     width: 100%;
@@ -10,60 +11,38 @@
     -o-background-size: cover;
     background-size: cover;
     position: relative;
-    
-    .logo, .input1, .input2, .log-in {
-            position: absolute;
-            -ms-transform: translate(-50%, -50%); 
-            -webkit-transform: translate(-50%, -50%); 
-            transform: translate(-50%, -50%);
-    }
+
     .logo {
-            top: 35%;
-            left: 50%;
+            margin: 0 auto;
+            padding-bottom: 60px;
     }
     input {
             width: 360px;
             height: 56px;
             border-radius: 5px;
             left: 50%;
-            
+            padding-left: 50px;
+            color: #b2b2b2;
     }
-    /* Sets input-placeholder colour for various browsers */
-    ::-webkit-input-placeholder { 
-    color: #b2b2b2;
+    .inputs {
+        position: relative;
+        margin: 0 auto;
+        padding: 10px 0px 10px 0px;
+        svg {
+            position: absolute;
+            left: 8%;
+            top: 50%;
+            z-index: 7;
+            -ms-transform: translate(-50%,-50%);
+            -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+        }
     }
-    :-moz-placeholder { 
-        color: #b2b2b2;
-        opacity:  1;
-    }
-    ::-moz-placeholder { 
-        color: #b2b2b2;
-        opacity:  1;
-    }
-    :-ms-input-placeholder { 
-        color: #b2b2b2;
-    }
-    ::-ms-input-placeholder { 
-        color: #b2b2b2;
-    }
-    button {
-        padding-top: 200px;
-    }
-    input:focus {
+    input:focus{
             color: #999;
     }
     
-    .input1 {
-            top: 55%;
-            
-    }
-    .input2 {
-            top: 65%;
-    }
-    
     .log-in {
-            top: 75%;
-            left: 50%;
             width: 360px;
             padding: 16px 0px 16px 0px;
             background-color: #9fd533;
@@ -76,5 +55,27 @@
         }
     .log-in:hover {
         background-color: #86b300;
+    }
+}
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    width: 360px;
+}
+@media (max-width: 420px) {
+    input {
+        width: 280px !important;
+    }
+    .log-in {
+        width: 280px !important;
+    }
+    .container {
+        width: 300px !important;
     }
 }
